@@ -1,0 +1,103 @@
+.t3{
+    /* padding: 50px;  */
+    text-align: center;
+    font-size: 4rem;
+    font-weight:500;
+}
+
+.m-w{
+    background-color: #0e7001;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    padding: 50px 0px 30px 0px;
+    
+}
+
+.fi{
+   display: flex;
+   flex: 1 1 600px;
+   justify-content: space-evenly;
+   margin-bottom: 3rem;
+}
+
+.fm img{
+    display: block;
+    height: 250px;
+    width: 250px;
+    /* margin: auto; */
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    /* margin-bottom: 70px;
+    margin-right:  5px;  */
+
+}
+
+.tx{
+    /* display: block; */
+    /* height: 250px;
+    width: 250px; */
+    /* display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    justify-content: center; */
+    
+    margin: auto 1.5rem;
+    /* width: 200px; */
+}
+
+.mt-4{
+    font-size: 2.5rem;
+    padding-bottom: 0.7rem;
+}
+
+.p2{
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding-bottom: 0.3rem;
+}
+
+.price-tag{
+    font-size: 2rem;
+    color: aqua;
+}
+
+/* ############################################## CONTACT PAGE ################################# */
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    /* justify-content:space-between; */
+}
+
+.contact-form .t5{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.contact-form input{
+    width: 200%;
+    
+
+}
+
+.contact-form textarea{
+    width: 200%;
+    height: 60%;
+    
+}
+
+@media(orientation:landscape) and (max-height:300px){
+    .header{
+     height: 70vmax;
+    } 
+ 
+    .heading-container .main-heading {
+     display: none;
+ }
+ .heading-container .main-p{
+     display: none;
+ }
+ 
+ }

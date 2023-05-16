@@ -1,0 +1,731 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+
+
+
+/* ################################# NAVIGATION BAR STYLING ##################################### */
+
+.nav1 input[type='checkbox'],
+.nav1 .h-l{
+    display: none;
+}
+
+/* ######################---utility-class---############################## */
+
+.container{
+    max-width: 1200px;
+    width: 80%;
+    margin:  auto;
+}
+
+.btn{
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    margin: 0.5em 0;
+}
+
+.primary-btn{
+    background-color: rgb(128, 128, 128);
+    color: rgb(255, 255, 255);
+    border-radius: 100px;
+    transition: all 0.5s ease-in-out;
+}
+
+.primary-btn:hover{
+    color: rgb(252, 252, 252);
+    background-color: #0e7001;
+    
+}
+
+
+
+
+
+/* #####################  MOBILE  ######################## */
+
+  
+
+
+/* #####################  DESKTOP ######################## */
+
+.nav1{ 
+    box-shadow: 0px 5px 10px 0px rgb(136, 136, 136);
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    color: black;
+    opacity: 0.85;
+    z-index: 99;
+
+}
+
+.nav-container{
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.m-i{
+    display: flex;
+    order: 2;
+}
+
+.m-i li{
+    list-style: none;
+    margin-left: 1.5rem;
+    font-size: 2rem;
+    
+}
+
+.m-i a{
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+    transition: all 0.3s ease-in-out;
+}
+.nav1 .logo{
+    font-size: 3.5rem;
+
+}
+
+.m-i a:hover{
+    color: #20d3b5;
+    text-decoration: underline;
+}
+
+
+
+.s-a1{
+    background:url(./img/pexels-daria-shevtsova-3596194.jpg);
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* color: greenyellow; */
+
+    
+}
+
+.s-a-c{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 2rem;
+    /* margin-bottom: 40rem; */
+
+}
+
+
+/* ######################################## ABOUT US ########################################## */
+
+.about{
+    padding: 70px 0;
+    background-color: rgb(238, 238, 238);
+    
+}
+
+
+.a-w{
+    
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 60vh; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+}
+
+.img1{
+    flex: 1 1 400px;
+    padding: 20px;
+    /* height: 85%; */
+    /* width: 35%; */
+    /* box-shadow: 0px 5px 10px 0px rgb(49, 49, 49); */
+    transform: translateX(150%);
+    animation: img1-animation 1s ease-in-out forwards;
+
+}
+
+@keyframes img1-animation{
+    100%{
+        transform:translateX(0%) ;
+    }
+}
+
+.img1 img{
+    display: block;
+    height: 500px;
+    max-width: 100%;
+    margin: auto;
+    box-shadow: 0px 5px 10px 0px rgb(49, 49, 49);
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.text1{
+    flex: 1 1 400px;
+    padding: 30px;
+    margin: auto;
+    /* margin-top: 20px; */
+    /* height: 90%; */
+    /* width: 55%; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    transform: translateX(-150%);
+    animation: text1-animation 1s ease-in-out forwards;
+   
+}
+
+@keyframes text1-animation{
+    100%{
+        transform:translateX(0%) ;
+    }
+}
+
+.t1{
+    padding-bottom: 5%;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.mt-2{
+    padding-bottom: 2%;
+    font-size: 3rem;
+    font-weight:900;
+}
+
+
+.p1{
+    padding-top: 5px;
+    font-size: 1.8rem;
+    font-weight:400;
+}
+
+
+/* ################################# CATEGORY #############################  */
+
+#category{
+    
+    padding-bottom: 150px;
+}
+
+.t2{
+    padding: 50px;
+    text-align: center;
+    font-size: 4rem;
+    font-weight:500;
+}
+
+.c-w{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.mt-3{
+    font-size: 5rem;
+}
+
+.box{
+    
+    flex: 1 1 400px;
+    /* padding: 20px; */
+    height: 300px;
+    max-width: 30%;
+    position: relative;
+
+    /* ######################### IMG STYLING############## */
+
+    /* display: block;
+    height: 300px;
+    max-width: 30%;
+    margin: auto;
+    box-shadow: 0px 5px 10px 0px rgb(49, 49, 49);
+    object-fit: cover;
+    object-position: center; */
+
+}
+
+.box img{
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    box-shadow: 0px 5px 10px 0px rgb(49, 49, 49);
+    object-fit: cover;
+    object-position: center;
+
+}
+
+
+
+
+
+.btn1{
+    display: inline-block;
+    font-size: 2rem;
+    background-color: rgb(168, 167, 167);
+    /* border: 2px solid red; */
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    margin-top: 0.8rem;
+}
+
+.btn1:hover{
+    background-color: rgb(99, 99, 99) ;
+}
+
+.box-box{
+    /* border: 2px solid yellow; */
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+    opacity: 0;
+    z-index: 2;
+    transition: all 500ms ease-in-out;
+}
+
+.box:hover .box-box{
+    opacity: 1;
+    left: 50%;
+    
+}
+
+.box::after{
+    /* border: 2px solid rgb(207, 253, 3); */
+    position: absolute;
+    top: 0;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    z-index: 1;
+    transition: all 300ms ease-in-out;
+}
+
+.box:hover::after{
+    opacity: 1;
+
+}
+
+/* ################################# Menu #############################  */
+
+.t3{
+    padding: 50px; 
+    text-align: center;
+    font-size: 4rem;
+    font-weight:500;
+}
+
+.m-w{
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0px 30px 0px;
+}
+
+.fi{
+    display: flex;
+    flex: 1 1 400px;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+}
+
+.m-w img{
+    display: block;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.tx{
+    
+    margin: auto 1.5rem;
+    
+}
+
+
+.mt-4{
+    font-size: 2.5rem;
+    padding-bottom: 0.7rem;
+}
+
+.p2{
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding-bottom: 0.3rem;
+}
+
+.price-tag{
+    font-size: 2rem;
+    color: rgb(43, 139, 94);
+}
+
+
+/* ################################################# TESTIMONIAL ######################################### */
+
+.testimonial{
+    background-color: rgb(248, 247, 247);
+    padding-bottom: 10rem;
+    
+}
+
+.t4{
+    padding: 50px; 
+    text-align: center;
+    font-size: 4rem;
+    font-weight:500;
+}
+
+
+.t-w{
+   
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+}
+
+
+
+.ti{
+    
+    
+    text-align: center;
+    padding: 1rem;
+    
+   
+} 
+
+.ti .checked{
+    color: #ff9529;
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+.ti img{
+
+    display: block;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin: auto;
+}
+
+
+
+.ti .p3{
+    padding: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.ti .tm .c-name{
+    padding: 0.8rem auto;
+    font-size: 1.5rem;
+    word-spacing: 1rem;
+    margin:1rem
+}
+
+
+/* ############################################## CONTACT PAGE ################################# */
+
+.contact{
+    padding: 3rem;
+    background-color: rgb(199, 199, 199);
+}
+
+.co-w{
+    display: flex;
+    background-color: white;
+}
+
+.co-img{
+    width: 50%;
+}
+
+.co-img img{
+    display: block;
+    /* height: 400px; */
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.contact-form{
+    padding: 1rem;
+    width: 50%;
+    margin: auto;
+}
+
+.contact-form .t5{
+    font-size: 3.4rem;
+    font-weight: 700;
+    
+}
+
+.contact-form input{
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    padding: 1rem 0;
+    box-shadow: none;
+    margin-bottom: 1rem;
+    color: #444;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.contact-form textarea{
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    box-shadow: none;
+    /* padding: 1rem 0; */
+    color: #444;
+    font-weight: 500;
+    font-size: 1.5rem;
+
+}
+
+.contact-form a{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* ##################################### foter ################################################# */
+
+.social-media-links{
+    font-size:2.5rem;
+    padding:1rem 0;
+}
+
+.footer1{
+    height: 100px;
+    background-color: rgb(112, 112, 112);
+    text-align: center;
+    padding:2rem 0;
+    letter-spacing: 0.5rem;
+    color: rgb(255, 253, 253);
+    font-size: 1.5rem;
+}
+
+
+/* ############################## MEDIA QUERIS #################### */
+
+@media  (max-width: 768px){
+    .nav1{
+        opacity: 0.95;
+    }
+
+    .nav-container input[type='checkbox'],
+    .nav-container .h-l{
+    display: block;
+}
+
+    .nav-container{
+        display: block;
+        position: relative;
+        height: 64px;
+    }
+
+    .nav-container input[type='checkbox']{
+        position: absolute;
+        display: block;
+        height:32px ;
+        width:40px ;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+
+    }
+
+    .nav-container .h-l{
+        display: block;
+        height:32px ;
+        width:40px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+    }
+
+    .nav-container .h-l .line{
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: rgb(63, 63, 63);
+        
+    }
+
+    .nav-container .h-l .l1{
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .nav-container .h-l .l2{
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+    }
+    
+    .nav-container .h-l .l3{
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .nav1 .m-i{
+        padding-top: 50px;
+        background-color: white;
+        height: 100vh;
+        max-width: 300px;
+        transform: translateX(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 50px;
+        transition: transform 0.5s ease-in-out;
+        box-shadow: 5px 0 10px 0 #aaa;
+
+    }
+
+    .nav1 .m-i li{
+        margin-top: 3rem;
+        font-size: 2rem;
+        font-weight: 500;
+
+    }
+
+    .logo{
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 3rem;
+
+    }
+
+    .nav-container input[type='checkbox']:checked ~ .m-i{
+        transform: translateX(0);
+    }
+    .nav-container input[type='checkbox']:checked ~ .h-l .l1{
+        transform: rotate(45deg);
+    }
+    .nav-container input[type='checkbox']:checked ~ .h-l .l2{
+        transform: scale(0);
+    }
+    .nav-container input[type='checkbox']:checked ~ .h-l .l3{
+        transform: rotate(-45deg);
+    }
+
+    /* ############### category ############# */
+
+    .c-w{
+        flex-direction: column;
+        align-items: stretch;
+        /* max-width: 90%; */
+
+    }
+
+    .box:not(:last-child){
+        margin-bottom: 3rem;
+    }
+
+    .box{
+        box-shadow: 5px 5px 10px 0;
+        max-width: 100%;
+
+    }
+     
+    .box img{
+        margin: 0;
+        
+    }
+
+
+}
+
+@media (max-width: 500px){
+    html{
+        font-size: 50%;
+    }
+
+    .t-w{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .fi{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .m-w img{
+        margin: auto;
+    }
+
+    .co-w{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-form{
+        width: 90%;
+
+    }
+
+    .co-img{
+        width: 90%;
+        margin: 3rem auto;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
